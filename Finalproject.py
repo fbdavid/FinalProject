@@ -94,7 +94,7 @@ def main():
         while len(team2list) < 5:
 
             inp = input("Enter the name of a player: ")
-            matches = []
+            matches = [] #Every player with commonalities is added to this list.
 
             for player in playerlist:
                 if inp.lower() in player.Player.lower():
