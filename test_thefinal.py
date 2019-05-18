@@ -83,7 +83,7 @@ def main():
                 print("Okay, player wont be added, let's try again.\n")
 
             if len(matches) == 0:
-                print("Sorry, we didn't find any players by that name.\
+                print("Sorry, we didn't find any players by that name.
                 Please try again... \n")
 
         print("Team one roster is filled, Team 2 it's your turn to pick")
@@ -106,7 +106,7 @@ def main():
                 print("We found the following matches... \n")
                 for match in matches:
                     print(match.Player)
-                print("Please re-enter the full name of the player you would" +\
+                print("Please re-enter the full name of the player you would" +
                 "like to add to your team.\n")
 
             if len(matches) == 1:
@@ -126,7 +126,7 @@ def main():
                 print("Okay, player wont be added, let's try again.\n")
 
             if len(matches) == 0:
-                print("Sorry, we didn't find any players by that name.\
+                print("Sorry, we didn't find any players by that name.
                 Please try again... \n")
         print("Team 2, your roster is filled, simulation would be complete soon!")
         print("Team Rating:" + str(team2_rating))
@@ -199,7 +199,7 @@ def stat():
             print("We found the following matches... \n")
             for match in matches:
                 print(match.Player)
-            print("Please re-enter the full name of the player you would" +\
+            print("Please re-enter the full name of the player you would" +
             "like to add to your team.\n")
 
         if len(matches) == 1:
@@ -219,7 +219,7 @@ def stat():
             print("Okay, player wont be added, let's try again.\n")
 
         if len(matches) == 0:
-            print("Sorry, we didn't find any players by that name.\
+            print("Sorry, we didn't find any players by that name.
             Please try again... \n")
 
     print("Team one roster is filled, Team 2 it's your turn to pick")
@@ -242,7 +242,7 @@ def stat():
             print("We found the following matches... \n")
             for match in matches:
                 print(match.Player)
-            print("Please re-enter the full name of the player you would" +\
+            print("Please re-enter the full name of the player you would" +
             "like to add to your team.\n")
 
         if len(matches) == 1:
@@ -262,7 +262,7 @@ def stat():
             print("Okay, player wont be added, let's try again.\n")
 
         if len(matches) == 0:
-            print("Sorry, we didn't find any players by that name.\
+            print("Sorry, we didn't find any players by that name.
             Please try again... \n")
     print("Team 2, your roster is filled, simulation would be complete soon!")
     print("Team Rating:" + str(team2_rating))
