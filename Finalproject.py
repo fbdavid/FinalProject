@@ -6,12 +6,12 @@ Assignment: Final Project
 import csv
 
 def main():
-    class Player_stats():
+    class Player_stats(): #create class for players
 
         def __init__(self,Player,DRB,AST,STL,BLK,PTS):
             self.Player = (Player)
 
-            self.DRB = float(DRB)
+            self.DRB = float(DRB) #Turn player stats to floats
             self.AST = float(AST)
             self.STL = float(STL)
             self.BLK = float(BLK)
@@ -25,7 +25,7 @@ def main():
                 self.DRB = 0.09
                 self.STK = 0.09
                 self.BLK = 0.09
-            self.score = ((self.PTS * self.AST) / (self.DRB + self.STL + self.BLK))
+            self.score = ((self.PTS * self.AST) / (self.DRB + self.STL + self.BLK)) #Equation for overall player rating/score/
 
 
     class main():
@@ -36,14 +36,15 @@ def main():
         total_1 = 0
         team2_rating = []
         total_2 = 0
-        with open("NBA_PLAYERS.csv") as f:
+        with open("NBA_PLAYERS.csv") as f: #Read the dataset
             data = csv.reader(f)
             first = True
             for row in data:
                 if first:
                     first = False
                     continue
-                playerlist.append(Player_stats(row[0],row[21],row[23],row[24],row[25],row[28]))
+                #Adds all players and their stats to a list    
+                playerlist.append(Player_stats(row[0],row[21],row[23],row[24],row[25],row[28])) 
 
             #print(len(playerlist))
             #for player in playerlist:
@@ -53,7 +54,7 @@ def main():
 
             inp = input("Enter the name of a player: ")
 
-            matches = []
+            matches = [] 
 
             for player in playerlist:
                 if inp.lower() in player.Player.lower():
