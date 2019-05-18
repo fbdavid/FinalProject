@@ -23,7 +23,8 @@ def main():
                 self.DRB = 0.09
                 self.STK = 0.09
                 self.BLK = 0.09
-            self.score = ((self.PTS * self.AST) / (self.DRB + self.STL + self.BLK)) #Equation for overall player rating/score/
+            #Equation for overall player rating/score.    
+            self.score = ((self.PTS * self.AST) / (self.DRB + self.STL + self.BLK)) 
 
 
     class main():
