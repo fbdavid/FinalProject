@@ -140,7 +140,7 @@ def main():
         for ele in range(0, len(team2_rating)):
             total_2 = total_2 + team2_rating[ele]
         print(total_2)
-
+# takes both teams totals and chooses a winner based on the total team ratings
         if total_1 > total_2:
             print("TEAM 1 WINS!!")
         else:
