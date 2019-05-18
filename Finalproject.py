@@ -6,12 +6,12 @@ Assignment: Final Project
 import csv
 
 def main():
-    class Player_stats():
+    class Player_stats():  #create a class for the stats
 
         def __init__(self,Player,DRB,AST,STL,BLK,PTS):
             self.Player = (Player)
 
-            self.DRB = float(DRB)
+            self.DRB = float(DRB) #convert all the stats to a float
             self.AST = float(AST)
             self.STL = float(STL)
             self.BLK = float(BLK)
@@ -22,7 +22,7 @@ def main():
                 self.DRB = 0.09
                 self.STK = 0.09
                 self.BLK = 0.09
-            self.score = ((self.PTS * self.AST) / (self.DRB + self.STL + self.BLK))
+            self.score = ((self.PTS * self.AST) / (self.DRB + self.STL + self.BLK)) #Equation calculates player rating
 
 
     class main():
@@ -33,7 +33,7 @@ def main():
         total_1 = 0
         team2_rating = []
         total_2 = 0
-        with open("NBA_PLAYERS.csv") as f:
+        with open("NBA_PLAYERS.csv") as f:  #Reads the CSV
             data = csv.reader(f)
             first = True
             for row in data:
@@ -48,9 +48,9 @@ def main():
 
         while len(teamlist) < 5:
 
-            inp = input("Enter the name of a player: ")
+            inp = input("Enter the name of a player: ") #Takes user input for Player's name.
 
-            matches = []
+            matches = [] #Shows all players that are in common with user input.
 
             for player in playerlist:
                 if inp.lower() in player.Player.lower():
@@ -67,7 +67,7 @@ def main():
                 print("Would you like to add " + matches[0].Player + " to your team?")
                 print("PTS: " + str(matches[0].PTS) + " AST: " + str(matches[0].AST))
                 inp = input("Y/N?")
-                if inp == 'Y' or inp == 'y' or inp == 'yes':
+                if inp == 'Y' or inp == 'y' or inp == 'yes': #User desides whether they want to add the player to their team
                     teamlist.append(matches[0])
                     print(matches[0].Player + " has been added. \n")
                     print("Player rating is:" + str(matches[0].score))
